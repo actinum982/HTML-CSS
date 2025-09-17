@@ -9,17 +9,20 @@
         border-radius: 10px;
         border-color: magenta;
     }
-    
+
+    td {
+        text-align: center;
+    }
     th, td {
         background-color: gainsboro;
     }
 </style>
 </head>
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
+    <table style="width:40%"> <!-- there are 2 sizes, width and hight, amount of them can be in % and in px -->
+        <caption>Employers</caption>
+        <tr><!-- Table Header can be placed anywhere in the table it's the same as table cell -->
+            <th colspan="2" style="width:90%">Name</th> <!-- We use colspan="amount of columns" on the <th> element, if we want to make header that spans over more than one column -->
             <th>Age</th>
         </tr>
         <tr>
